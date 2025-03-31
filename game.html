@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <!-- Botão para reiniciar o jogo -->
+    <button id="reiniciarBtn" class="reiniciar-btn">Reset</button>
+
+    <!-- Botão para voltar à página principal -->
+    <button id="homeBtn" class="home-btn">Home</button>
+    
+    <!-- Controles de direção -->
+    <button class="up-btn">Up</button>
+    <button class="down-btn">Down</button>
+    <button class="left-btn">Left</button>
+    <button class="right-btn">Right</button>
+
+    <!-- Contêiner do jogo -->
+    <div id="game-container"></div>
+
+    <!-- Script do jogo -->
+    <script src="game.js"></script>
+    
+    <script>
+        // Código para recarregar a página ao clicar no botão de reiniciar
+        document.getElementById("reiniciarBtn").addEventListener("click", function() {
+            location.reload();  // Recarrega a página
+        });
+
+        // Código para voltar à página principal ao clicar no botão Home
+        document.getElementById("homeBtn").addEventListener("click", function() {
+            window.location.href = "main.html"; // Redireciona para a página principal
+        });
+    </script>
+</body>
+</html>

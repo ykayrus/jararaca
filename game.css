@@ -1,0 +1,147 @@
+/* Estilos gerais */
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a tela */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(3, 34, 25, 0.9), rgba(19, 156, 115, 0.9));
+    color: white; /* Para deixar o texto branco */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+.up-btn {
+    background: linear-gradient(135deg, rgba(50, 151, 3, 0.9), rgba(2, 48, 36, 0.9));
+    color: rgb(10, 250, 170); /* Cor do texto */
+    border: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    /* Posicionando no centro vertical da sub-bar */
+    position: absolute;
+    top: 80%;
+    left: 550px; /* Distância da esquerda */
+    transform: translateY(-50%);
+}
+
+.down-btn {
+    background: linear-gradient(135deg, rgba(50, 151, 3, 0.9), rgba(2, 48, 36, 0.9));
+    color: rgb(10, 250, 170); /* Cor do texto */
+    border: none;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    /* Posicionando no centro vertical da sub-bar */
+    position: absolute;
+    top: 90%;
+    left: 550px; /* Distância da esquerda */
+    transform: translateY(-50%);
+}
+
+.left-btn {
+    background: linear-gradient(135deg, rgba(50, 151, 3, 0.9), rgba(2, 48, 36, 0.9));
+    color: rgb(10, 250, 170); /* Cor do texto */
+    border: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    /* Posicionando no centro vertical da sub-bar */
+    position: absolute;
+    top: 90%;
+    left: 400px; /* Distância da esquerda */
+    transform: translateY(-50%);
+}
+
+.right-btn {
+    background: linear-gradient(135deg, rgba(50, 151, 3, 0.9), rgba(2, 48, 36, 0.9));
+    color: rgb(10, 250, 170); /* Cor do texto */
+    border: none;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    /* Posicionando no centro vertical da sub-bar */
+    position: absolute;
+    top: 90%;
+    left: 700px; /* Distância da esquerda */
+    transform: translateY(-50%);
+}
+
+.reiniciar-btn {
+    position: absolute;
+    top: 1%;
+    left: 85%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(135deg, rgba(50, 151, 3, 0.9), rgba(2, 48, 36, 0.9));
+    color: rgb(10, 250, 170); /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do botão "Home" */
+.home-btn {
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(135deg, rgba(50, 151, 3, 0.9), rgba(2, 48, 36, 0.9));
+    color: rgb(10, 250, 170); /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsividade para o botão "Up" */
+@media (max-width: 768px) {
+    .up-btn {
+        font-size: 14px; /* Ajuste no tamanho da fonte */
+        padding: 20px 40px;
+        top: 75%; /* Mantém a posição relativa */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .down-btn {
+        font-size: 14px;
+        padding: 20px 30px;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .left-btn {
+        font-size: 14px;
+        padding: 20px 30px;
+        top: 85%;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    .right-btn {
+        font-size: 14px;
+        padding: 20px 30px;
+        top: 85%;
+        left: 80%;
+        transform: translateX(-50%);
+    }
+}
+
